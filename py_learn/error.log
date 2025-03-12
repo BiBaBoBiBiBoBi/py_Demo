@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\workshop\swa_projects\py_Demo\py_learn\16_demo_try.py", line 5, in <module>
+    weight = float(input("plz input a number2:"))
+ValueError: could not convert string to float: 'sda'
+ + 

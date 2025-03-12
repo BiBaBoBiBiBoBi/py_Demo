@@ -1,0 +1,7 @@
+123
+312
+123132
+
+3123
+213this line append to file contents
+write after read
