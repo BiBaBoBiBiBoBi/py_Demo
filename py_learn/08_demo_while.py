@@ -2,8 +2,10 @@
 from itertools import count
 from time import sleep
 
+
 def measure_brightness():
     print("I am func() measure_brightness.")
+
 
 def while_test():
     i = 0
@@ -14,7 +16,6 @@ def while_test():
 
     # print("sleep end")
 
-    user_input = input("input some numbers to calc avg,type 'q' to end input:")
     sum = 0
     cnt = 0
     while user_input != 'q':
@@ -29,16 +30,17 @@ def while_test():
         avg = sum / cnt
     print(avg)
 
+
 # 跳转语句
 # break return continue
 def jump_sentence():
     for i in range(1, 20):
-        if i< 15:
+        if i < 15:
             continue
-        elif i<18:
-            print("i > 15",i)
+        elif i < 18:
+            print("i > 15", i)
         else:
-            print("ready to break",i)
+            print("ready to break", i)
             break
 
 

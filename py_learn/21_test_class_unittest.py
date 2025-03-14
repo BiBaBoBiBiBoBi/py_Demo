@@ -2,7 +2,7 @@
 # unittest 常见单元测试库
 import unittest
 
-from py_learn.TestTarget import LeeJohn,my_adder
+from py_learn.test_target_class import LeeJohn,my_adder
 
 # python -m unittest py_learn.TestClass  ( run in local console
 class TestMyAdder(unittest.TestCase): # 测试方法必须以test_开头，这个库只会按照这个命名规则去搜索测试用例

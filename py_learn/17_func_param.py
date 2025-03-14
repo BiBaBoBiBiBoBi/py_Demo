@@ -17,30 +17,29 @@ from typing import List
 def record(name, age, gender='male'):
     print(name, age, gender)
 
+
 def eat(*food, **desert):
     print(type(food), food, sep='\n')
     print(type(desert), desert, sep='\n')
+
 
 def func_print1(*args):
     print(args)
     return args  # --> tuple
 
+
 def func_print2(**args):
     print(args)
 
-def twoSum( nums: List[int], target: int) -> List[int]:
-        map = {}
-        for i in range(len(nums)):
-            other= target - nums[i]
-            if other in map:
-                print([i,map[other]])
-                return [i,map[other]]
-            map[nums[i]]= i
 
-
-
-
-
+def twoSum(nums: List[int], target: int) -> List[int]:
+    map = {}
+    for i in range(len(nums)):
+        other = target - nums[i]
+        if other in map:
+            print([i, map[other]])
+            return [i, map[other]]
+        map[nums[i]] = i
 
 
 if __name__ == '__main__':
@@ -58,5 +57,4 @@ if __name__ == '__main__':
     #
     # print(type(func_res),func_res)
 
-    twoSum(nums=[1,3,4,2],target=6)
-
+    twoSum(nums=[1, 3, 4, 2], target=6)

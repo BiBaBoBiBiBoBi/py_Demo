@@ -9,7 +9,7 @@ res_01 = 33 + int("233")
 print(res_01)
 # str/int -> float
 res_03 = float("2.32342")
-res_03 = float(1233)
+res_04 = float(1233)
 # other -> str
 res_02 = str(type(True))
 

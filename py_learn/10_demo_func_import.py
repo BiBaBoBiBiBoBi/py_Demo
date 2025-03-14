@@ -7,7 +7,7 @@ def calculate_BMI(weight, height):
     user_BMI = float(weight) / (float(height) ** 2)
     return user_BMI
 
-# // 代表向下取整
+'''// 代表向下取整 == floor() '''
 def getMedianOfList(num_list):
     sort_lst = sorted(num_list)
     n = len(num_list)

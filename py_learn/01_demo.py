@@ -19,7 +19,9 @@ my_name = "Jeremy"
 
 # 2**3 <=> 2^3
 res_01 = 2 ** 3  # =8
-
+res_02 = 8 /9  #0.888888
+res_floor = 8 // 9 # 0  向下取整
+print(f"res2 = {res_02} , res_floor = {res_floor}")
 import math
 res_02 = math.pow(2, 3)
 
@@ -51,7 +53,7 @@ c = 20
 
 # slice
 sli = slice(1,4,2) # [1,4,2]
-# print("abc1234567"[sli])
+# print("abc1234567"[sli])  #->  b1
 
 # ord  chr
 # py的内存中是unicode编码
@@ -74,6 +76,15 @@ sett=frozenset((1,2,3,4))
 lst_02= ["aa","vv","cc","dd"]
 # for e in enumerate(lst_02):
 #     print(e)
+'''解包 ind,e '''
+# for ind,e in enumerate(lst_02):
+#     print(ind,e)
+'''
+(0, 'aa')
+(1, 'vv')
+(2, 'cc')
+(3, 'dd')
+'''
 # # enumerate 等价于
 # for i in range(len(lst_02)):
 #     print(i,lst_02[i])
