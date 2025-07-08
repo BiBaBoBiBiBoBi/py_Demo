@@ -78,5 +78,5 @@ map
 
 """
 lst = [2, 3, 7, 3, 6, 12, 9, 4]
-r = map(lambda i,: (i ** 2, 1), lst)
+r = map(lambda i: (i ** 2, 1), lst)
 print(dict(r)) # 是一个生成器，需要用dict组装
