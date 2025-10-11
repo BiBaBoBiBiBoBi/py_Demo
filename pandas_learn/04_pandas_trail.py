@@ -1,5 +1,18 @@
+def show_all_data(pd):
+    # 1. 设置显示所有行
+    pd.set_option('display.max_rows', None)
+    # 2. 设置显示所有列
+    pd.set_option('display.max_columns', None)
+    # (可选) 3. 设置列宽，以便完整显示单元格内容
+    pd.set_option('display.max_colwidth', None)
+    # (可选) 4. 设置显示宽度，防止换行
+    pd.set_option('display.width', 1000)  # 可以根据你的屏幕宽度调整数字
+
+
 if __name__ == '__main__':
     import pandas as pd
+
+    show_all_data(pd)
 
     pd.set_option("display.max_rows", 5)
     # DF
@@ -7,6 +20,7 @@ if __name__ == '__main__':
     # print(fruits1.head(),end='\n\n')
     fruits2 = pd.DataFrame({'apple': [10], 'banana': [20]})
     # print(fruits2.head(),end='\n\n')
+    # index 可以理解为行标签，即给这一行的数据命名
     fruit_sales = pd.DataFrame([[35, 21], [41, 34]], columns=['Apples', 'Bananas'], index=['2017 Sales', '2018 Sales'])
     # print(fruit_sales.head(),end='\n\n')
 
@@ -71,4 +85,4 @@ if __name__ == '__main__':
     print(reviews.iloc[:100, range(3, 11)])
 
     #SummaryFunction and Maps
-    
+
